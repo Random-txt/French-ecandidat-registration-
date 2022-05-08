@@ -6,6 +6,7 @@ import time
 
 
 web = webdriver.Firefox()
+#web = webdriver.Chrome() #activate if you use chrome
 
 
 
@@ -14,9 +15,9 @@ web.get('https://candidatures.univ-amu.fr/candidatures/#!accueilView')  # change
 
 time.sleep(2)
 
-nom = "Gurram"
-prenom = "Raviteja"
-mail = "ravi.gurram6c@gmail.com"
+nom = " "         #add your name  remove spaces
+prenom = " "    #your other name
+mail = " "  #your mail
 
 creercompte = web.find_element_by_xpath('/html/body/div[1]/div/div[2]/div/div[2]/div/div/div/div[2]/div/div/div/div[3]/div/div[2]/div/div[3]/div/div/div/div[3]/div/div[2]/div/div[13]/div')
 creercompte.click()
